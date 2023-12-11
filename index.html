@@ -12,7 +12,11 @@
 </head>
 
 <body>
-    <img src="img/photo.jpg" width="400" alt="Терехова Анна">
+    <div class="container">
+    <div class="info">
+    <img src="img/photo-1.jpg" alt="Терехова Анна" class="photo">
+
+    <div class="info-text">
     <h1>Терехова Анна</h1>
     <p>Я <strong>студентка</strong> в Тольяттинском государственном университете. Хочу стать <strong>Full-stack разработчиком.</strong></p>
     <p>Мое хобби <em>плавание</em>, <em>путешествия</em>, а еще я  <em>геймер.</em></p>
@@ -21,7 +25,10 @@
     <a href="https://vk.com/annaterekhova99" target="_blank" >VK</a>
     <a href="https://www.instagram.com/"  target="_blank" >Instagram</a>
     <a href="https://www.youtube.com/"  target="_blank" >Youtube</a>
-    
+    </div>
+    </div>
+
+    <div class="card bg-green">
     <h2>Мои хобби</h2>
     <ol>
         <li>Плавание</li>
@@ -29,7 +36,9 @@
         <li>Путешествия</li>
         <li>Рисование</li>
     </ol>
-
+    </div>
+    
+    <div class="card bg-red">
     <h3>Опыт работы</h3>
     <table>
         <thead>
@@ -59,8 +68,17 @@
             </tr>
         </tbody>
     </table>
+    </div>
 
-        <h3 class="forum">Связаться со мной</h3>
+    <div class="card bg-yellow">
+    <h2>Мои курсы</h2>
+    <ul class="fon">
+        <li>HTML Academy</li>
+        <li>Result School</li>
+    </ul>
+    </div>
+   
+    <h3 class="forum">Связаться со мной</h3>
         <form action="/">
             <div>
                 <label for="name">Ваше имя</label>
@@ -76,7 +94,10 @@
                 <label for="message">Ваше сообщение</label><br>
                 <textarea id="message" rows="5" placeholder="Введите сообщение...."></textarea>
             </div>
-            <button type="submit">Отправить!</button>
+
+            <button type="submit" class="bth">Отправить!</button>
+            
         </form>
+    </div>
 </body>
 </html>
